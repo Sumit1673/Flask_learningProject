@@ -1,0 +1,14 @@
+1. To beautify the layout of a html page use bootstrap library
+1.1 Anything inside the html file like for loop or with or if else which is not related to html
+    should be inside {% your_code %} {% endyour_code%}
+1.2. To open a page from layout.html use url_for(function_name)
+    
+2. For login page --> use flask-wtf forms
+    First install the forms pip install flask-wtf
+
+3. import flash from flask for displaying a message
+    have different flags for type of information.
+    To grab the flashed message to a html page use get_flashed_message(with_categoreis=true)
+    in html file.
+
+4. redirect command to go to a particular page by passing the page related function.
