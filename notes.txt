@@ -1,0 +1,13 @@
+# Paginate
+posts = Post.query.paginate()
+dir(posts)
+posts.per_page --> tells how many post can be displayed in one page. Default 20
+
+# display with page number;
+posts = Post.query.paginate(page=2) --> gives the posts in the second page
+
+posts = Post.query.paginate(per_page=5) --> sets 5 posts per page
+
+posts = Post.query.paginate(per_page=5, page=2) --> sets 5 posts per page with a certain page number
+
+# use the link to go to a particular page: http://127.0.0.1:5000/home?page=2
